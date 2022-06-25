@@ -26,15 +26,20 @@ function newNonPlayableCharacter(x, y) {
     function walkEast(time) {
         direction = 'east'
         element.src = `./assets/red-character/east.gif`
-        return new Promise((resolve) => {
+        return new Promise((resolve) => {  
+           
             setTimeout (function(){
+                          
                 stop()
                 resolve()
-            }, time)
-            
+                                           
+                
+            },time)  
+        
             })
+        
     }
-    
+      
 
     function walkNorth() {
         direction = 'north'
